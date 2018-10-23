@@ -36,6 +36,37 @@ class AlgorithmViewController: UIViewController
         let stepThree : String = "Then select a workspace directory and click Create."
         let stepFour : String = "Then you need to arrange the files into their proper directories: AppDelegate.swift, Assets.xcassets, and Info.plist go into a group called \"Resources,\" ViewController.swift goes into a \"Controller\" group, and LaunchScreen.storyboard and Main.storyboard go into \"View\" (to create a group, select the files that will go into that group, right-click, and select \"New Group from Selection\")."
         let stepFive : String = "Finally, click on the configuration file (at the top) and in the \"Identity\" section, click \"Choose Info.plist File\" and select your Info.plist file and click Choose."
+        
+        let algorithm = [stepOne, stepTwo, stepThree]
+        
+        let attrubutesDictionary = [NSAttributedStringKey.font : algorithmText.font]
+        let fullAttributedString = NSMutableAttributedString(string: title, attributes: attributesDictionary)
+        
+        for step in algorithm
+        {
+            let bullet : String = "🔪"
+            let formattedStep : String = "\n\(bullet)  \(step)"
+            let attributedStringStep : NSMutableAttributedString = NSMutableAttributedString(string: formattedStep)
+            let outlineStyle = createOutlineStyle()
+            
+            attributedStringStep.addAttributes([NSAttributedStringKey.paragraphStyle : outlineStyle], range: NSMakeRange(0, attributedStringStep.length))
+            
+            fullAttributedString.append(attributedStringStep)
+        }
+        
+        algorithmText.attributedText = fullAttributedString
+    }
+    
+    private func createOutlineStyle() -> NSParagraphStyle
+    {
+        let outlineStyle : NSMutableParagraphStyle = NSMutableParagraphStyle()
+        
+        outlineStyle.alignment = .left
+        outlineStyle.defaultTabInterval = 15
+        outlineStyle.firstLineHeadIndent = 20
+        outlineStyle.headIndent = 35
+        
+        return outlineStyle
     }
 }
 
