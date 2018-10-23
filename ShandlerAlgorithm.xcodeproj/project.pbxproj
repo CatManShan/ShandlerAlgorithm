@@ -54,14 +54,38 @@
 		37A9FB66217F990700655063 /* ShandlerAlgorithm */ = {
 			isa = PBXGroup;
 			children = (
-				37A9FB67217F990700655063 /* AppDelegate.swift */,
-				37A9FB69217F990700655063 /* ViewController.swift */,
-				37A9FB6B217F990700655063 /* Main.storyboard */,
-				37A9FB6E217F990800655063 /* Assets.xcassets */,
-				37A9FB70217F990800655063 /* LaunchScreen.storyboard */,
-				37A9FB73217F990800655063 /* Info.plist */,
+				37A9FB79217F991300655063 /* Resources */,
+				37A9FB7B217F992700655063 /* Controller */,
+				37A9FB7A217F992100655063 /* View */,
 			);
 			path = ShandlerAlgorithm;
+			sourceTree = "<group>";
+		};
+		37A9FB79217F991300655063 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				37A9FB67217F990700655063 /* AppDelegate.swift */,
+				37A9FB6E217F990800655063 /* Assets.xcassets */,
+				37A9FB73217F990800655063 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		37A9FB7A217F992100655063 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				37A9FB6B217F990700655063 /* Main.storyboard */,
+				37A9FB70217F990800655063 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		37A9FB7B217F992700655063 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				37A9FB69217F990700655063 /* ViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -281,7 +305,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = ShandlerAlgorithm/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/ShandlerAlgorithm/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -298,7 +322,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = ShandlerAlgorithm/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/ShandlerAlgorithm/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
