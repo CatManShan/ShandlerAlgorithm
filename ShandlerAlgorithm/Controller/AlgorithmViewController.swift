@@ -17,13 +17,25 @@ class AlgorithmViewController: UIViewController
     override func viewDidLoad()
     {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        formatAlgorithm();
     }
 
     override func didReceiveMemoryWarning()
     {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    private func formatAlgorithm() -> Void
+    {
+        let title : String = "How to Make an App"
+        
+        let stepOne : String = "Open Xcode and select \"Create a new Xcode project.\""
+        let stepTwo : String = "Select \"Single View App,\" click Next, enter the app details, and click Next."
+        let stepThree : String = "Then select a workspace directory and click Create."
+        let stepFour : String = "Then you need to arrange the files into their proper directories: AppDelegate.swift, Assets.xcassets, and Info.plist go into a group called \"Resources,\" ViewController.swift goes into a \"Controller\" group, and LaunchScreen.storyboard and Main.storyboard go into \"View\" (to create a group, select the files that will go into that group, right-click, and select \"New Group from Selection\")."
+        let stepFive : String = "Finally, click on the configuration file (at the top) and in the \"Identity\" section, click \"Choose Info.plist File\" and select your Info.plist file and click Choose."
     }
 }
 
