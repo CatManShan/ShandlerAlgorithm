@@ -18,24 +18,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yIa-bD-det">
-                                <rect key="frame" x="0.0" y="269" width="375" height="128"/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jg9-K8-Alp">
                                 <rect key="frame" x="0.0" y="20" width="375" height="241"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="241" id="bbL-eP-xb0"/>
                                 </constraints>
-                                <attributedString key="attributedText">
-                                    <fragment content="Label">
-                                        <attributes>
-                                            <font key="NSFont" metaFont="system" size="32"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
+                                <attributedString key="attributedText"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="swiftSample" translatesAutoresizingMaskIntoConstraints="NO" id="yIa-bD-det">
+                                <rect key="frame" x="0.0" y="269" width="375" height="398"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -59,4 +52,7 @@
             <point key="canvasLocation" x="117.59999999999999" y="117.39130434782609"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="swiftSample" width="1248" height="1244"/>
+    </resources>
 </document>

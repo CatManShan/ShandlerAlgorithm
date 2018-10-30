@@ -45,7 +45,7 @@ class AlgorithmViewController: UIViewController
         //For each step, it inserts a bullet at the beginning, converts it to an NSMutableAttributedString, adds the attributes, then adds it to fullAttributedString
         for step in algorithm
         {
-            let bullet : String = "🔪"
+            let bullet : String = "💉"
             let formattedStep : String = "\n\(bullet)  \(step)" //interpolation
             let attributedStringStep : NSMutableAttributedString = NSMutableAttributedString(string: formattedStep)
             let outlineStyle = createOutlineStyle()
